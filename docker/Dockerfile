@@ -116,3 +116,10 @@ RUN set -ex \
  && sudo yum clean all \
  && sudo rm -rf /var/cache/yum \
  && sudo rm /tmp/isce-2.0-1.x86_64.rpm
+
+ENV PYTHONPATH /opt/isce2:$PYTHONPATH
+ENV ISCE_HOME /opt/isce2/isce
+ENV PATH $ISCE_HOME/applications:$ISCE_HOME/bin:/opt/conda/bin:$PATH
+ENV LD_LIBRARY_PATH /opt/conda/lib:$LD_LIBRARY_PATH
+ENV GDAL_DATA=/opt/conda/share/gdal
+
