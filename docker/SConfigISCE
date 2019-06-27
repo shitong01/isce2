@@ -37,5 +37,5 @@ X11INCPATH = /usr/include       # path to location of the X11 directory
 RPATH = /opt/conda/lib /usr/lib64 /usr/lib
 
 #Explicitly enable cuda if needed
-ENABLE_CUDA = True
+ENABLE_CUDA = False
 #CUDA_TOOLKIT_PATH = $YOUR_CUDA_INSTALLATION  #/usr/local/cuda
